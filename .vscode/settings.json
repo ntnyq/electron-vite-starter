@@ -1,0 +1,39 @@
+{
+  "eslint.validate": [
+    "vue",
+    "yaml",
+    "html",
+    "json",
+    "jsonc",
+    "json5",
+    "markdown",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.tsc.autoDetect": "off",
+  "json.schemas": [
+    {
+      "fileMatch": ["/*electron-builder.json5", "/*electron-builder.json"],
+      "url": "https://json.schemastore.org/electron-builder"
+    }
+  ],
+  "cSpell.words": [
+    "asar",
+    "bumpp",
+    "changelogithub",
+    "Destructurable",
+    "dorny",
+    "iconify",
+    "nocheck",
+    "nsis",
+    "octocat",
+    "pinia",
+    "unplugin",
+    "Vite",
+    "vueuse"
+  ],
+  "cSpell.allowCompoundWords": true
+}

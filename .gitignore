@@ -1,0 +1,19 @@
+.DS_Store
+node_modules
+logs
+*.log*
+*.local
+
+dist
+dist-ssr
+dist-electron
+release
+
+# Editor directories and files
+.vscode/.debug.env
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
