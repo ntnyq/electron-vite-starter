@@ -46,6 +46,7 @@
     "@iconify-json/carbon": "^1.1.16",
     "@ntnyq/eslint-config": "^1.7.2",
     "@ntnyq/prettier-config": "^1.7.2",
+    "@unocss/eslint-config": "^0.51.8",
     "@vitejs/plugin-vue": "^4.2.1",
     "bumpp": "^9.1.0",
     "electron": "^24.1.3",

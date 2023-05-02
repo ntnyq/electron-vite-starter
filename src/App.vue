@@ -1,12 +1,27 @@
 <template>
-  <div class="min-h-screen flex flex-col justify-center items-center">
-    <h1 class="mb-10 text-5xl text-red text-center">Hello world</h1>
+  <div
+    flex="~ col"
+    min-h-screen
+    items-center
+    justify-center
+  >
+    <h1
+      text="center 5xl red"
+      mb-10
+    >
+      Hello world
+    </h1>
     <button
-      class="btn text-white border border-blue-600/30 bg-blue-600/90 hover:bg-blue-800 hover:border-blue-800 sm:mb-0 px-8 py-3 rounded-3xl flex gap-2"
+      flex="~"
+      border="~ blue-600/30"
+      bg="blue-600/90"
+      class="px-8 py-3 text-white sm:mb-0 btn hover:(border-blue-800 bg-blue-800)"
       type="button"
       role="button"
+      gap-2
+      rounded-3xl
     >
-      <div class="i-carbon-logo-github w-6 h-6"></div>
+      <div class="i-carbon-logo-github h-6 w-6"></div>
       Primary
     </button>
   </div>
