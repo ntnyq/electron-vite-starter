@@ -37,6 +37,7 @@
   "dependencies": {
     "@unocss/reset": "^0.51.8",
     "@vueuse/core": "^10.1.2",
+    "clipboardy": "^3.0.0",
     "dayjs": "^1.11.7",
     "pinia": "^2.0.35",
     "vue": "^3.2.47",

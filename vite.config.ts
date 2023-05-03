@@ -29,7 +29,15 @@ export default defineConfig(({ command }) => {
     },
 
     plugins: [
-      vue(),
+      vue({
+        template: {
+          compilerOptions: {
+            isCustomElement: tag => {
+              return [/^webview$/i].some(v => v.test(tag))
+            },
+          },
+        },
+      }),
       electron([
         {
           // Main-Process entry file of the Electron App.
