@@ -50,7 +50,7 @@
     "@unocss/eslint-config": "^0.51.12",
     "@vitejs/plugin-vue": "^4.2.1",
     "bumpp": "^9.1.0",
-    "electron": "^24.3.0",
+    "electron": "^25.1.1",
     "electron-builder": "^23.6.0",
     "eslint": "^8.40.0",
     "husky": "^8.0.3",
