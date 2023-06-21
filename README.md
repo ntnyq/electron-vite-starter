@@ -12,3 +12,5 @@
 - [Electron ⚡️ Vite](https://www.zhihu.com/column/c_1553415231476269056)
 
 ## License
+
+[MIT](./LICENSE) License © 2023-PRESENT [ntnyq](https://github.com/ntnyq)

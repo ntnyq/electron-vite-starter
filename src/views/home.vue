@@ -8,7 +8,7 @@ const hasCopied = ref(false)
 const handleCopy = async () => {
   hasCopied.value = true
   await clipboard.write('Hello world')
-  await waitFor(2e3)
+  await waitFor(5e2)
   hasCopied.value = false
 }
 const handleGoWebview = () => {
