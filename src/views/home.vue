@@ -5,6 +5,7 @@ import { waitFor } from '@/utils'
 const router = useRouter()
 
 const hasCopied = ref(false)
+
 const handleCopy = async () => {
   hasCopied.value = true
   await clipboard.write('Hello world')
