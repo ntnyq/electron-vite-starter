@@ -1,5 +1,6 @@
 import { rmSync } from 'node:fs'
 import path from 'node:path'
+import process from 'node:process'
 import { URL, fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'

@@ -1,5 +1,6 @@
 import { release } from 'node:os'
 import { join } from 'node:path'
+import process from 'node:process'
 import { BrowserWindow, app, ipcMain, shell } from 'electron'
 
 // The built directory structure
