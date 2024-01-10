@@ -48,7 +48,7 @@
     "@ntnyq/eslint-config": "^1.20.0",
     "@ntnyq/prettier-config": "^1.20.0",
     "@unocss/eslint-config": "^0.58.0",
-    "@vitejs/plugin-vue": "^4.5.2",
+    "@vitejs/plugin-vue": "^5.0.3",
     "bumpp": "^9.2.1",
     "electron": "^28.0.0",
     "electron-builder": "^24.9.1",
