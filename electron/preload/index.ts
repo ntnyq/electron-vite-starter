@@ -86,7 +86,9 @@ const { appendLoading, removeLoading } = useLoading()
 domReady().then(appendLoading)
 
 window.addEventListener('message', evt => {
-  evt.data?.payload === 'removeLoading' && removeLoading()
+  if (evt.data?.payload === 'removeLoading') {
+    removeLoading()
+  }
 })
 
 setTimeout(removeLoading, 4999)

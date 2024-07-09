@@ -1,5 +1,0 @@
-{
-  "root": true,
-  "extends": ["@ntnyq", "@unocss", "./.eslintrc-auto-import.json"],
-  "ignorePatterns": ["dist-electron"]
-}

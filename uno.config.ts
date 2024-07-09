@@ -3,6 +3,7 @@ import {
   presetAttributify,
   presetIcons,
   presetUno,
+  transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
 
@@ -16,5 +17,5 @@ export default defineConfig({
 
   presets: [presetUno(), presetIcons(), presetAttributify()],
 
-  transformers: [transformerVariantGroup()],
+  transformers: [transformerDirectives(), transformerVariantGroup()],
 })

@@ -7,7 +7,6 @@ import vue from '@vitejs/plugin-vue'
 import unocss from 'unocss/vite'
 import autoImport from 'unplugin-auto-import/vite'
 import vueComponents from 'unplugin-vue-components/vite'
-// eslint-disable-next-line import/default
 import electron from 'vite-plugin-electron'
 import renderer from 'vite-plugin-electron-renderer'
 import pkg from './package.json'
@@ -86,9 +85,6 @@ export default defineConfig(({ command }) => {
       autoImport({
         dts: resolve('src/auto-imports.d.ts'),
         imports: ['vue', 'pinia', 'vue-router', '@vueuse/core'],
-        eslintrc: {
-          enabled: true,
-        },
         resolvers: [],
       }),
       vueComponents({

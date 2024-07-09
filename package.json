@@ -29,7 +29,7 @@
     "clean": "rimraf dist dist-electron release",
     "dev": "vite",
     "lint": "eslint .",
-    "prepare": "husky install",
+    "prepare": "husky",
     "preview": "vite preview",
     "release": "bumpp && pnpm publish",
     "typecheck": "vue-tsc --noEmit"
@@ -45,19 +45,19 @@
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.36",
-    "@ntnyq/eslint-config": "^1.21.2",
+    "@ntnyq/eslint-config": "^2.5.1",
     "@ntnyq/prettier-config": "^1.21.2",
     "@unocss/eslint-config": "^0.61.3",
     "@vitejs/plugin-vue": "^5.0.5",
     "bumpp": "^9.4.1",
     "electron": "^31.1.0",
     "electron-builder": "^24.13.3",
-    "eslint": "^8.57.0",
+    "eslint": "^9.6.0",
     "husky": "^9.0.11",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^6.2.2",
     "prettier": "^3.3.2",
-    "rimraf": "^5.0.9",
+    "rimraf": "^6.0.0",
     "tsx": "^4.16.2",
     "typescript": "^5.5.3",
     "unocss": "^0.61.3",
@@ -70,6 +70,6 @@
   },
   "prettier": "@ntnyq/prettier-config",
   "nano-staged": {
-    "*.js,ts,mts,cjs,vue,md,yml,yaml,html.json": "eslint --fix"
+    "*.{js,ts,mjs,cjs,vue,md,yml,yaml,html,json}": "eslint --fix"
   }
 }
