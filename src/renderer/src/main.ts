@@ -1,4 +1,5 @@
 import '@unocss/reset/tailwind.css'
+import 'floating-vue/style.css'
 import 'uno.css'
 import '@renderer/styles/style.css'
 

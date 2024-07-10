@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { Tooltip } from 'floating-vue'
 import { toggleDark } from '@renderer/composables/useDark'
 import { version } from '../../../../package.json'
 
@@ -14,23 +15,29 @@ const appTitle = import.meta.env.VITE_APP_TITLE
       <small class="font-500">{{ version }}</small>
     </div>
     <div class="flex items-center gap-2">
-      <button
-        @click="toggleDark"
-        class="btn-icon"
-        type="button"
-        role="button"
-      >
-        <div class="i-ri-sun-line dark:i-ri-moon-line" />
-      </button>
-      <a
-        href="https://github.com/ntnyq/starter-electron-vite"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn-icon"
-        role="button"
-      >
-        <div class="i-ri-github-fill" />
-      </a>
+      <Tooltip>
+        <button
+          @click="toggleDark"
+          class="btn-icon"
+          type="button"
+          role="button"
+        >
+          <div class="i-ri-sun-line dark:i-ri-moon-line" />
+        </button>
+        <template #popper>Toggle Color Mode</template>
+      </Tooltip>
+      <Tooltip>
+        <a
+          href="https://github.com/ntnyq/starter-electron-vite"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-icon"
+          role="button"
+        >
+          <div class="i-ri-github-fill" />
+        </a>
+        <template #popper>View Source Code</template>
+      </Tooltip>
     </div>
   </div>
 </template>
