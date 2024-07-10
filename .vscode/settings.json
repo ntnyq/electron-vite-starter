@@ -21,6 +21,7 @@
     "Destructurable",
     "electronjs",
     "execa",
+    "iconify",
     "nocheck",
     "nsis",
     "pinia",

@@ -1,0 +1,72 @@
+:root {
+  --c-bg-base: #fff;
+  --c-text-base: #232323;
+  --c-border: #ccc;
+
+  --h-navbar: 60px;
+}
+
+:root.dark {
+  color-scheme: dark;
+  --c-bg-base: #1e1e1e;
+  --c-text-base: #fff;
+  --c-border: #666;
+}
+
+body {
+  background-color: var(--c-bg-base);
+  font-size: 16px;
+  color: var(--c-text-base);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.versions {
+  position: absolute;
+  bottom: 30px;
+  margin: 0 auto;
+  padding: 15px 0;
+  font-family: 'Menlo', 'Lucida Console', monospace;
+  display: inline-flex;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 22px;
+  backdrop-filter: blur(24px);
+}
+
+.versions li {
+  display: block;
+  float: left;
+  border-right: 1px solid var(--ev-c-gray-1);
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 14px;
+  opacity: 0.8;
+  &:last-child {
+    border: none;
+  }
+}
+
+/* Color Mode transition */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 2147483646;
+}
+
+.dark::view-transition-old(root) {
+  z-index: 2147483646;
+}
+
+.dark::view-transition-new(root) {
+  z-index: 1;
+}

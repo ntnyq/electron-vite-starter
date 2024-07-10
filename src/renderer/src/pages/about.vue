@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="h-screen flex items-center justify-center">
+  <div class="h-full flex items-center justify-center">
     <div class="flex flex-col items-center justify-center gap-4">
       <h1 class="text-3xl font-semibold">ntnyq</h1>
       <p class="p-6 text-xl">This is it!</p>
