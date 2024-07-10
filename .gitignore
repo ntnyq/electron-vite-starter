@@ -1,13 +1,10 @@
-.DS_Store
 node_modules
-logs
+.DS_Store
 *.log*
 *.local
 
 dist
-dist-ssr
-dist-electron
-release
+out
 
 # Editor directories and files
 .vscode/.debug.env

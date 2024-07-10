@@ -4,12 +4,7 @@
 
 ## Credits
 
-- [electron-vite](https://github.com/electron-vite)
-
-## Links
-
-- [electron-vite - docs](https://github.com/electron-vite/docs/issues/1)
-- [Electron ⚡️ Vite](https://www.zhihu.com/column/c_1553415231476269056)
+- [electron-vite - docs](https://electron-vite.org)
 
 ## License
 

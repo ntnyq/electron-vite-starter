@@ -1,4 +1,7 @@
 {
+  "eslint.enable": true,
+  "prettier.enable": true,
+  "editor.formatOnSave": true,
   "eslint.validate": [
     "vue",
     "yaml",
@@ -12,30 +15,17 @@
     "javascriptreact",
     "typescriptreact"
   ],
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.tsc.autoDetect": "off",
-  "json.schemas": [
-    {
-      "fileMatch": ["/*electron-builder.json5", "/*electron-builder.json"],
-      "url": "https://json.schemastore.org/electron-builder"
-    }
-  ],
+  "cSpell.allowCompoundWords": true,
   "cSpell.words": [
-    "asar",
-    "Attributify",
-    "bumpp",
     "changelogithub",
-    "clipboardy",
     "Destructurable",
-    "dorny",
-    "iconify",
+    "electronjs",
+    "execa",
     "nocheck",
     "nsis",
-    "octocat",
     "pinia",
     "unplugin",
-    "Vite",
+    "vite",
     "vueuse"
-  ],
-  "cSpell.allowCompoundWords": true
+  ]
 }
