@@ -1,5 +1,5 @@
 import path from 'node:path'
-import { URL, fileURLToPath } from 'node:url'
+import { fileURLToPath, URL } from 'node:url'
 import { execa } from 'execa'
 import type { Options } from 'execa'
 

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { Tooltip } from 'floating-vue'
 import { toggleDark } from '@renderer/composables/useDark'
+import { Tooltip } from 'floating-vue'
 import { version } from '../../../../package.json'
 
 const appTitle = import.meta.env.VITE_APP_TITLE

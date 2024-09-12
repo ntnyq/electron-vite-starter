@@ -3,9 +3,9 @@ import 'floating-vue/style.css'
 import 'uno.css'
 import '@renderer/styles/style.css'
 
-import pinia from '@renderer/stores'
-import { router } from '@renderer/router'
 import App from '@renderer/App.vue'
+import { router } from '@renderer/router'
+import pinia from '@renderer/stores'
 
 const app = createApp(App)
 
