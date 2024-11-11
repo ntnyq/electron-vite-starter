@@ -35,7 +35,7 @@
     "typecheck:web": "vue-tsc --noEmit -p tsconfig.web.json --composite false"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.269",
+    "@iconify/json": "^2.2.270",
     "@unocss/reset": "^0.64.0",
     "@vueuse/core": "^11.2.0",
     "dayjs": "^1.11.13",
@@ -52,8 +52,8 @@
     "@ntnyq/eslint-config": "^3.2.0",
     "@ntnyq/prettier-config": "^1.21.3",
     "@types/node": "^22.9.0",
-    "@vitejs/plugin-vue": "^5.1.4",
-    "electron": "^33.1.0",
+    "@vitejs/plugin-vue": "^5.1.5",
+    "electron": "^33.2.0",
     "electron-builder": "^25.1.8",
     "electron-updater": "^6.3.9",
     "electron-vite": "^2.3.0",
