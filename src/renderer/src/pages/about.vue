@@ -1,5 +1,3 @@
-<script lang="ts" setup></script>
-
 <template>
   <div class="h-full flex items-center justify-center">
     <div class="flex flex-col items-center justify-center gap-4">
