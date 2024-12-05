@@ -11,12 +11,15 @@ import VueRouter from 'unplugin-vue-router/vite'
 import { resolve } from './scripts/utils'
 
 export default defineConfig({
+  main: {
+    plugins: [externalizeDepsPlugin()],
+  },
+
+  preload: {
+    plugins: [externalizeDepsPlugin()],
+  },
+
   renderer: {
-    resolve: {
-      alias: {
-        '@renderer': resolve('src/renderer/src'),
-      },
-    },
     plugins: [
       VueRouter({
         dts: resolve('src/renderer/src/typed-router.d.ts'),
@@ -32,20 +35,17 @@ export default defineConfig({
       }),
 
       VueComponents({
-        dts: resolve('src/renderer/src/components.d.ts'),
         dirs: [resolve('src/renderer/src/components')],
+        dts: resolve('src/renderer/src/components.d.ts'),
         resolvers: [],
       }),
 
       UnoCSS(),
     ],
-  },
-
-  main: {
-    plugins: [externalizeDepsPlugin()],
-  },
-
-  preload: {
-    plugins: [externalizeDepsPlugin()],
+    resolve: {
+      alias: {
+        '@renderer': resolve('src/renderer/src'),
+      },
+    },
   },
 })
