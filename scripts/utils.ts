@@ -1,18 +1,20 @@
 import path from 'node:path'
 import { fileURLToPath, URL } from 'node:url'
-import { execa } from 'execa'
-import type { Options } from 'execa'
+import { x } from 'tinyexec'
+import type { Options } from 'tinyexec'
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 const rootPath = path.resolve(__dirname, '..')
 
 export const resolve = (...args: string[]) => path.resolve(rootPath, ...args)
 
-const execaOptions: Options = {
-  cwd: rootPath,
-  stdio: 'inherit',
-}
-
-export async function runCommand(...args: string[]) {
-  await execa(args[0], args.slice(1), execaOptions)
+export async function runCommand(command: string, args: string[], options: Partial<Options> = {}) {
+  await x(command, args, {
+    ...options,
+    nodeOptions: {
+      cwd: rootPath,
+      stdio: 'inherit',
+      ...options.nodeOptions,
+    },
+  })
 }
