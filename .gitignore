@@ -1,16 +1,16 @@
-node_modules
 .DS_Store
+node_modules
 *.log*
 *.local
 
 dist
 out
 
+*.tsbuildinfo
+
 # Editor directories and files
 .vscode/.debug.env
 .idea
 *.suo
-*.ntvs*
-*.njsproj
 *.sln
 *.sw?

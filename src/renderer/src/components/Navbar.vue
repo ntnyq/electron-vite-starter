@@ -28,7 +28,7 @@ const appTitle = import.meta.env.VITE_APP_TITLE
       </Tooltip>
       <Tooltip>
         <a
-          href="https://github.com/ntnyq/starter-electron-vite"
+          href="https://github.com/ntnyq/electron-vite-starter"
           target="_blank"
           rel="noopener noreferrer"
           class="btn-icon"

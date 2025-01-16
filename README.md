@@ -1,7 +1,7 @@
-# starter-electron-vite
+# electron-vite-starter
 
-[![CI](https://github.com/ntnyq/starter-electron-vite/workflows/CI/badge.svg)](https://github.com/ntnyq/starter-electron-vite/actions)
-[![LICENSE](https://img.shields.io/github/license/ntnyq/starter-electron-vite.svg)](https://github.com/ntnyq/starter-electron-vite/blob/main/LICENSE)
+[![CI](https://github.com/ntnyq/electron-vite-starter/workflows/CI/badge.svg)](https://github.com/ntnyq/electron-vite-starter/actions)
+[![LICENSE](https://img.shields.io/github/license/ntnyq/electron-vite-starter.svg)](https://github.com/ntnyq/electron-vite-starter/blob/main/LICENSE)
 
 > Starter for electron project build via vite
 
@@ -11,4 +11,4 @@
 
 ## License
 
-[MIT](./LICENSE) License © 2023-PRESENT [ntnyq](https://github.com/ntnyq)
+[MIT](./LICENSE) License © 2025-PRESENT [ntnyq](https://github.com/ntnyq)
