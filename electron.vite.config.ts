@@ -1,5 +1,6 @@
 /**
  * @file Electron Vite Configuration
+ * @see {@link https://electron-vite.org/config}
  */
 
 import Vue from '@vitejs/plugin-vue'
@@ -42,6 +43,7 @@ export default defineConfig({
 
       UnoCSS(),
     ],
+
     resolve: {
       alias: {
         '@renderer': resolve('src/renderer/src'),

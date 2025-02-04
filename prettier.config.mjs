@@ -7,14 +7,14 @@ export default defineConfig({
 
   overrides: [
     {
-      files: ['*.html'],
+      files: ['**/*.html'],
       options: {
         singleAttributePerLine: false,
       },
     },
 
     {
-      files: ['*.{css,scss}'],
+      files: ['**/*.{css,scss}'],
       options: {
         singleQuote: false,
       },

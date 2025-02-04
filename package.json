@@ -37,9 +37,11 @@
   },
   "dependencies": {
     "@iconify/json": "^2.2.302",
+    "@ntnyq/utils": "^0.4.5",
     "@unocss/reset": "^65.4.3",
     "@vueuse/core": "^12.5.0",
     "dayjs": "^1.11.13",
+    "echarts": "^5.6.0",
     "floating-vue": "^5.2.2",
     "pinia": "^2.3.1",
     "unplugin-vue-router": "^0.11.2",
@@ -50,9 +52,9 @@
     "@electron-toolkit/preload": "^3.0.1",
     "@electron-toolkit/tsconfig": "^1.0.1",
     "@electron-toolkit/utils": "^3.0.0",
-    "@ntnyq/eslint-config": "^3.12.3",
+    "@ntnyq/eslint-config": "^4.0.0-beta.1",
     "@ntnyq/prettier-config": "^1.22.1",
-    "@types/node": "^22.13.0",
+    "@types/node": "^22.13.1",
     "@vitejs/plugin-vue": "^5.2.1",
     "electron": "^34.0.2",
     "electron-builder": "^25.1.8",
@@ -76,6 +78,6 @@
   },
   "nano-staged": {
     "*.{js,ts,mjs,cjs,vue,md,yml,yaml,json,svg}": "eslint --fix",
-    "*.{css}": "prettier --write"
+    "*.{css,scss,html}": "prettier -uw"
   }
 }
