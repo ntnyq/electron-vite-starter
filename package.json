@@ -1,6 +1,6 @@
 {
   "name": "electron-vite-starter",
-  "type": "commonjs",
+  "type": "module",
   "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@10.2.0",
@@ -75,6 +75,12 @@
     "vite": "^6.0.11",
     "vue": "^3.5.13",
     "vue-tsc": "^2.2.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "electron"
+    ]
   },
   "nano-staged": {
     "*.{js,ts,mjs,cjs,vue,md,yml,yaml,json,svg}": "eslint --fix",

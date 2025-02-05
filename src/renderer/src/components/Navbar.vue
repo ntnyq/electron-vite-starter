@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { toggleDark } from '@renderer/composables/useDark'
+import { toggleDark } from '@renderer/composables/dark'
 import { Tooltip } from 'floating-vue'
 import { version } from '../../../../package.json'
 
