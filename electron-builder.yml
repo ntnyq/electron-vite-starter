@@ -1,5 +1,5 @@
-appId: com.electron.app
-productName: electron-vite
+appId: com.ntnyq.dev-helper
+productName: DevHelper
 directories:
   buildResources: build
 files:
@@ -12,12 +12,16 @@ files:
 asarUnpack:
   - resources/**
 win:
-  executableName: electron-vite
+  executableName: DevHelper
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}
   uninstallDisplayName: ${productName}
   createDesktopShortcut: always
+  # oneClick: false
+  # perMachine: true
+  # allowElevation: true
+  # allowToChangeInstallationDirectory: true
 mac:
   entitlementsInherit: build/entitlements.mac.plist
   extendInfo:

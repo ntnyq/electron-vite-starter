@@ -18,7 +18,7 @@ const appTitle = import.meta.env.VITE_APP_TITLE
       <Tooltip>
         <button
           @click="toggleDark"
-          class="btn-icon"
+          class="btn-action"
           type="button"
           role="button"
         >
@@ -31,7 +31,7 @@ const appTitle = import.meta.env.VITE_APP_TITLE
           href="https://github.com/ntnyq/electron-vite-starter"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn-icon"
+          class="btn-action"
           role="button"
         >
           <div class="i-ri-github-fill" />
