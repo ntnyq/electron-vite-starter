@@ -5,10 +5,12 @@ directories:
 files:
   - '!**/.vscode/*'
   - '!src/*'
+  - '!scripts/*'
   - '!electron.vite.config.{js,ts,mjs,cjs}'
   - '!{.eslintignore,.eslintrc.cjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}'
   - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
   - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
+  - '!{prettier.config.mjs,eslint.config.mjs}'
 asarUnpack:
   - resources/**
 win:
@@ -23,6 +25,7 @@ nsis:
   # allowElevation: true
   # allowToChangeInstallationDirectory: true
 mac:
+  artifactName: ${productName}-${version}-${arch}.${ext}
   entitlementsInherit: build/entitlements.mac.plist
   extendInfo:
     - NSCameraUsageDescription: Application requests access to the device's camera.
@@ -31,7 +34,7 @@ mac:
     - NSDownloadsFolderUsageDescription: Application requests access to the user's Downloads folder.
   notarize: false
 dmg:
-  artifactName: ${name}-${version}.${ext}
+  artifactName: ${name}-${version}-${arch}.${ext}
 linux:
   target:
     - AppImage
@@ -43,7 +46,9 @@ appImage:
   artifactName: ${name}-${version}.${ext}
 npmRebuild: false
 publish:
-  provider: generic
-  url: https://example.com/auto-updates
+  provider: github
+  owner: ntnyq
+  repo: dev-helper
 electronDownload:
   mirror: https://npmmirror.com/mirrors/electron/
+removePackageScripts: true

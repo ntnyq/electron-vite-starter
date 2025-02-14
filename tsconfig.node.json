@@ -2,6 +2,10 @@
   "extends": "@electron-toolkit/tsconfig/tsconfig.node.json",
   "compilerOptions": {
     "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["src/shared/*"]
+    },
     "types": ["electron-vite/node"]
   },
   "include": [
@@ -9,6 +13,7 @@
     "src/main/**/*",
     "src/shared/**/*",
     "src/preload/**/*",
-    "scripts/**/*"
+    "scripts/**/*",
+    "shims.d.ts"
   ]
 }

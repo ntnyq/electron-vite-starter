@@ -7,8 +7,8 @@ import {
   defineConfig,
   presetIcons,
   presetTypography,
-  presetUno,
   presetWebFonts,
+  presetWind3,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -18,7 +18,7 @@ export default defineConfig({
   transformers: [transformerDirectives(), transformerVariantGroup()],
 
   presets: [
-    presetUno(),
+    presetWind3(),
     presetTypography(),
     presetIcons({
       autoInstall: true,

@@ -5,7 +5,9 @@
     "moduleResolution": "Bundler",
     "baseUrl": ".",
     "paths": {
-      "@renderer/*": ["src/renderer/src/*"]
+      "@renderer/*": ["src/renderer/src/*"],
+      "~/*": ["src/renderer/*"],
+      "@shared/*": ["src/shared/*"]
     }
   },
   "include": [

@@ -22,19 +22,19 @@ const appTitle = import.meta.env.VITE_APP_TITLE
           type="button"
           role="button"
         >
-          <div class="i-ri-sun-line dark:i-ri-moon-line" />
+          <div class="i-ri:sun-line dark:i-ri:moon-line" />
         </button>
         <template #popper>Toggle Color Mode</template>
       </Tooltip>
       <Tooltip>
         <a
-          href="https://github.com/ntnyq/electron-vite-starter"
+          href="https://github.com/ntnyq/dev-helper"
           target="_blank"
           rel="noopener noreferrer"
           class="btn-action"
           role="button"
         >
-          <div class="i-ri-github-fill" />
+          <div class="i-ri:github-fill" />
         </a>
         <template #popper>View Source Code</template>
       </Tooltip>
