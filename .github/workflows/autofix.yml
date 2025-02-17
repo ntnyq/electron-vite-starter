@@ -1,15 +1,16 @@
-name: CI
+name: autofix.ci # must named autofix.ci
 
 on:
-  pull_request:
-    branches:
-      - main
   push:
     branches:
       - main
+  pull_request: {}
+
+permissions:
+  contents: read
 
 jobs:
-  check:
+  autofix:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -20,5 +21,8 @@ jobs:
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run lint
-      - run: pnpm run typecheck
+      - run: pnpm run lint --fix
+
+      - uses: autofix-ci/action@v1.3.2
+        with:
+          commit-message: 'chore: autofix by ci'

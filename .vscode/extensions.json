@@ -4,6 +4,8 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "streetsidesoftware.code-spell-checker",
-    "editorconfig.editorconfig"
+    "editorconfig.editorconfig",
+    "mikestead.dotenv",
+    "antfu.unocss"
   ]
 }

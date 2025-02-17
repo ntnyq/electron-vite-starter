@@ -1,10 +1,10 @@
 <template>
-  <div class="h-full flex items-center justify-center">
-    <div class="flex flex-col items-center justify-center gap-4">
+  <div class="flex h-full items-center justify-center">
+    <div class="flex flex-col gap-4 items-center justify-center">
       <h1 class="text-3xl font-semibold">ntnyq</h1>
-      <p class="p-6 text-xl">This is it!</p>
+      <p class="text-xl p-6">This is it!</p>
       <RouterLink
-        class="border border-teal-500 rounded-md px-4 py-2 text-teal-500 transition-colors hover:bg-teal-500 hover:text-white"
+        class="text-teal-500 px-4 py-2 border border-teal-500 rounded-md transition-colors hover:text-white hover:bg-teal-500"
         to="/"
       >
         Go back

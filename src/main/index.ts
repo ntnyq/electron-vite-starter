@@ -1,47 +1,34 @@
-import { join } from 'node:path'
 import process from 'node:process'
-import { electronApp, is, optimizer } from '@electron-toolkit/utils'
-import { app, BrowserWindow, ipcMain, shell } from 'electron'
-import icon from '../../resources/icon.png?asset'
-
-function createWindow(): void {
-  // Create the browser window.
-  const mainWindow = new BrowserWindow({
-    width: 900,
-    height: 670,
-    show: false,
-    autoHideMenuBar: true,
-    ...(process.platform === 'linux' ? { icon } : {}),
-    webPreferences: {
-      preload: join(__dirname, '../preload/index.js'),
-      sandbox: false,
-    },
-  })
-
-  mainWindow.on('ready-to-show', () => {
-    mainWindow.show()
-  })
-
-  mainWindow.webContents.setWindowOpenHandler(details => {
-    shell.openExternal(details.url)
-    return { action: 'deny' }
-  })
-
-  // HMR for renderer base on electron-vite cli.
-  // Load the remote URL for development or the local html file for production.
-  if (is.dev && process.env.ELECTRON_RENDERER_URL) {
-    mainWindow.loadURL(process.env.ELECTRON_RENDERER_URL)
-  } else {
-    mainWindow.loadFile(join(__dirname, '../renderer/index.html'))
-  }
-}
+import { electronApp, optimizer } from '@electron-toolkit/utils'
+import { app, ipcMain, Menu } from 'electron'
+import { createAppMenu } from './menu'
+// import { isAccessibilityGranted } from './utils'
+import {
+  createMainWindow,
+  // createPanelWindow,
+  // createSetupWindow,
+  // makePanelWindowClosable,
+  WINDOWS,
+} from './window'
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.whenReady().then(() => {
   // Set app user model id for windows
-  electronApp.setAppUserModelId('com.electron')
+  electronApp.setAppUserModelId(__APP_ID__)
+
+  // const accessibilityGranted = isAccessibilityGranted()
+
+  Menu.setApplicationMenu(createAppMenu())
+
+  // if (accessibilityGranted) {
+  createMainWindow({})
+  // } else {
+  //   createSetupWindow()
+  // }
+
+  // createPanelWindow()
 
   // Default open or close DevTools by F12 in development
   // and ignore CommandOrControl + R in production.
@@ -53,15 +40,26 @@ app.whenReady().then(() => {
   // IPC test
   ipcMain.on('ping', () => console.log('pong'))
 
-  createWindow()
-
   app.on('activate', () => {
     // On macOS it's common to re-create a window in the app when the
     // dock icon is clicked and there are no other windows open.
-    if (BrowserWindow.getAllWindows().length === 0) {
-      createWindow()
+    if (WINDOWS.size === 0) {
+      createMainWindow()
     }
+    // if (accessibilityGranted) {
+    //   if (!WINDOWS.get('main')) {
+    //     createMainWindow()
+    //   }
+    // } else {
+    //   if (!WINDOWS.get('setup')) {
+    //     createSetupWindow()
+    //   }
+    // }
   })
+
+  // app.on('before-quit', () => {
+  //   makePanelWindowClosable()
+  // })
 })
 
 // Quit when all windows are closed, except on macOS. There, it's common

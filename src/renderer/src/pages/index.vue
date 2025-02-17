@@ -5,17 +5,17 @@ function handleSendIPC() {
 </script>
 
 <template>
-  <div class="h-full flex items-center justify-center">
-    <div class="flex items-center gap-4">
+  <div class="flex h-full items-center justify-center">
+    <div class="flex gap-4 items-center">
       <RouterLink
-        class="border border-primary-500 rounded-md px-2 py-1 text-primary-500 transition-colors dark:border-white hover:bg-primary-500 dark:text-white hover:text-white dark:hover:text-white"
+        class="text-primary-500 px-2 py-1 border border-primary-500 rounded-md transition-colors dark:text-white hover:text-white dark:border-white hover:bg-primary-500 dark:hover:text-white"
         to="/about"
       >
         About
       </RouterLink>
       <a
         @click="handleSendIPC"
-        class="cursor-pointer border border-primary-500 rounded-md px-2 py-1 text-primary-500 transition-colors dark:border-white hover:bg-primary-500 dark:text-white hover:text-white dark:hover:text-white"
+        class="text-primary-500 px-2 py-1 border border-primary-500 rounded-md cursor-pointer transition-colors dark:text-white hover:text-white dark:border-white hover:bg-primary-500 dark:hover:text-white"
         target="_blank"
         rel="noreferrer"
       >

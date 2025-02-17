@@ -1,3 +1,4 @@
-provider: generic
-url: https://example.com/auto-updates
-updaterCacheDirName: electron-vite-updater
+provider: github
+owner: ntnyq
+repo: electron-vite-starter
+updaterCacheDirName: desktop-updater-electron-vite-starter

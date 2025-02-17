@@ -2,13 +2,21 @@
   "extends": "@electron-toolkit/tsconfig/tsconfig.node.json",
   "compilerOptions": {
     "composite": true,
-    "types": ["electron-vite/node"]
+    "moduleResolution": "Bundler",
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["src/shared/*"]
+    },
+    "types": ["electron-vite/node"],
+    "erasableSyntaxOnly": true,
+    "libReplacement": false
   },
   "include": [
     "electron.vite.config.*",
     "src/main/**/*",
     "src/shared/**/*",
     "src/preload/**/*",
-    "scripts/**/*"
+    "scripts/**/*",
+    "shims.d.ts"
   ]
 }

@@ -1,18 +1,20 @@
 import path from 'node:path'
-import { fileURLToPath, URL } from 'node:url'
 import { x } from 'tinyexec'
 import type { Options } from 'tinyexec'
 
-const __dirname = fileURLToPath(new URL('.', import.meta.url))
-const rootPath = path.resolve(__dirname, '..')
+const ROOT_PATH = path.resolve(import.meta.dirname, '..')
 
-export const resolve = (...args: string[]) => path.resolve(rootPath, ...args)
+export const resolve = (...args: string[]) => path.resolve(ROOT_PATH, ...args)
 
-export async function runCommand(command: string, args?: string[], options: Partial<Options> = {}) {
+export async function runCommand(
+  command: string,
+  args?: string[],
+  options: Partial<Options> = {},
+) {
   await x(command, args, {
     ...options,
     nodeOptions: {
-      cwd: rootPath,
+      cwd: ROOT_PATH,
       stdio: 'inherit',
       ...options.nodeOptions,
     },
