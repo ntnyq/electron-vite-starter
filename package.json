@@ -42,17 +42,17 @@
     "@electron-uikit/notification": "^1.0.0",
     "@electron-uikit/titlebar": "^1.2.0",
     "@electron-uikit/toast": "^1.0.0",
-    "@ntnyq/utils": "^0.6.0",
+    "@ntnyq/utils": "^0.6.1",
     "@unocss/reset": "^66.0.0",
     "@vueuse/core": "^12.7.0",
     "dayjs": "^1.11.13",
     "echarts": "^5.6.0",
-    "electron-log": "^5.3.0",
+    "electron-log": "^5.3.1",
     "electron-store": "^10.0.1",
     "floating-vue": "^5.2.2",
     "nanoid": "^5.1.2",
     "pinia": "^3.0.1",
-    "valibot": "1.0.0-rc.2",
+    "valibot": "1.0.0-rc.3",
     "vue-i18n": "^11.1.1",
     "vue-router": "^4.5.0"
   },
@@ -73,7 +73,7 @@
     "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^7.0.2",
-    "prettier": "^3.5.2",
+    "prettier": "^3.5.3",
     "tinyexec": "^0.3.2",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2",
@@ -83,7 +83,7 @@
     "unplugin-vue-router": "^0.11.2",
     "vite": "^6.2.0",
     "vue": "^3.5.13",
-    "vue-tsc": "^2.2.6"
+    "vue-tsc": "^2.2.8"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
