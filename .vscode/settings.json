@@ -29,6 +29,7 @@
     "Destructurable",
     "dyld",
     "electronjs",
+    "esbuild",
     "execa",
     "iconify",
     "maximizable",

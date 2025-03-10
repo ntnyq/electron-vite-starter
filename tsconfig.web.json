@@ -8,7 +8,9 @@
       "@renderer/*": ["src/renderer/src/*"],
       "~/*": ["src/renderer/*"],
       "@shared/*": ["src/shared/*"]
-    }
+    },
+    "erasableSyntaxOnly": true,
+    "libReplacement": false
   },
   "include": [
     "src/renderer/src/env.d.ts",

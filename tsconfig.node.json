@@ -6,7 +6,9 @@
     "paths": {
       "@shared/*": ["src/shared/*"]
     },
-    "types": ["electron-vite/node"]
+    "types": ["electron-vite/node"],
+    "erasableSyntaxOnly": true,
+    "libReplacement": false
   },
   "include": [
     "electron.vite.config.*",
