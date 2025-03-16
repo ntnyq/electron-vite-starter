@@ -81,13 +81,13 @@ export function createMainWindow({ url }: { url?: string } = {}) {
     window.on('close', () => {
       if (configStore.get().hideDockIcon) {
         app.setActivationPolicy('accessory')
-        app.dock.hide()
+        app.dock?.hide()
       }
     })
 
     window.on('show', () => {
-      if (configStore.get().hideDockIcon && !app.dock.isVisible()) {
-        app.dock.show()
+      if (configStore.get().hideDockIcon && !app.dock?.isVisible()) {
+        app.dock?.show()
       }
     })
   }
