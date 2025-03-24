@@ -74,7 +74,7 @@
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^7.0.2",
     "prettier": "^3.5.3",
-    "tinyexec": "^0.3.2",
+    "tinyexec": "^1.0.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2",
     "unocss": "^66.1.0-beta.5",
