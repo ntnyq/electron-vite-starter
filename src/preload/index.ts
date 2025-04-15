@@ -16,8 +16,6 @@ if (process.contextIsolated) {
     console.error(err)
   }
 } else {
-  // @ts-ignore (define in dts)
   window.electron = electronAPI
-  // @ts-ignore (define in dts)
   window.api = api
 }
