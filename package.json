@@ -57,7 +57,7 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@electron-toolkit/preload": "^3.0.1",
+    "@electron-toolkit/preload": "^3.0.2",
     "@electron-toolkit/tsconfig": "^1.0.1",
     "@electron-toolkit/utils": "^4.0.0",
     "@iconify-json/ri": "^1.2.5",
@@ -65,11 +65,11 @@
     "@ntnyq/prettier-config": "^2.0.0",
     "@types/node": "^22.14.1",
     "@vitejs/plugin-vue": "^5.2.3",
-    "electron": "35.1.5",
+    "electron": "35.2.0",
     "electron-builder": "^26.0.12",
     "electron-updater": "^6.6.2",
     "electron-vite": "^3.1.0",
-    "eslint": "^9.24.0",
+    "eslint": "^9.25.0",
     "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
     "npm-run-all2": "^7.0.2",
