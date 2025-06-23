@@ -62,7 +62,7 @@
     "@electron-toolkit/utils": "^4.0.0",
     "@iconify-json/ri": "^1.2.5",
     "@ntnyq/eslint-config": "^4.3.0",
-    "@ntnyq/prettier-config": "^2.2.0",
+    "@ntnyq/prettier-config": "^3.0.1",
     "@types/node": "^22.15.32",
     "@vitejs/plugin-vue": "^5.2.4",
     "electron": "36.4.0",
