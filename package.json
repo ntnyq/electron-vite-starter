@@ -64,7 +64,7 @@
     "@ntnyq/eslint-config": "^5.0.0",
     "@ntnyq/prettier-config": "^3.0.1",
     "@types/node": "^24.0.10",
-    "@vitejs/plugin-vue": "^5.2.4",
+    "@vitejs/plugin-vue": "^6.0.0",
     "electron": "^37.2.0",
     "electron-builder": "^26.0.12",
     "electron-updater": "^6.6.2",
