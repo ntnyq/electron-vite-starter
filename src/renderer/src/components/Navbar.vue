@@ -8,13 +8,13 @@ const appTitle = import.meta.env.VITE_APP_TITLE
 
 <template>
   <div
-    class="h-$h-navbar flex flex-wrap items-center justify-between border-b border-base p-2 px-4"
+    class="p-2 px-4 border-b border-base flex flex-wrap h-$h-navbar items-center justify-between"
   >
     <div class="flex gap-1">
       <h1 class="text-xl font-semibold">{{ appTitle }}</h1>
       <small class="font-500">{{ version }}</small>
     </div>
-    <div class="flex items-center gap-2">
+    <div class="flex gap-2 items-center">
       <Tooltip>
         <button
           @click="toggleDark"

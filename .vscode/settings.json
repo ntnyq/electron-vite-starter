@@ -22,6 +22,7 @@
     "javascriptreact",
     "typescriptreact"
   ],
+  "cSpell.useGitignore": true,
   "cSpell.allowCompoundWords": true,
   "cSpell.words": [
     "akiflow",
