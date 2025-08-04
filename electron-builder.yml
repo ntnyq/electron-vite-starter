@@ -1,5 +1,5 @@
-appId: com.ntnyq.dev-helper
-productName: DevHelper
+appId: com.ntnyq.electron-vite-starter
+productName: ElectronViteStarter
 directories:
   buildResources: build
 files:
@@ -14,7 +14,7 @@ files:
 asarUnpack:
   - resources/**
 win:
-  executableName: DevHelper
+  executableName: ElectronViteStarter
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}
@@ -48,7 +48,7 @@ npmRebuild: false
 publish:
   provider: github
   owner: ntnyq
-  repo: dev-helper
+  repo: electron-vite-starter
 electronDownload:
   mirror: https://npmmirror.com/mirrors/electron/
 removePackageScripts: true

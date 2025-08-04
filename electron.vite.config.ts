@@ -14,7 +14,7 @@ import pkg from './package.json'
 import { resolve } from './scripts/utils'
 
 const define = {
-  __APP_ID__: JSON.stringify('com.ntnyq.dev-helper'),
+  __APP_ID__: JSON.stringify('com.ntnyq.electron-vite-starter'),
   __APP_VERSION__: JSON.stringify(pkg.version),
   __IS_MAC__: JSON.stringify(process.platform === 'darwin'),
 }

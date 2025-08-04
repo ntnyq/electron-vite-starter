@@ -1,4 +1,4 @@
 provider: github
 owner: ntnyq
-repo: dev-helper
-updaterCacheDirName: desktop-updater-dev-helper
+repo: electron-vite-starter
+updaterCacheDirName: desktop-updater-electron-vite-starter
