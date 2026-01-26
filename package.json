@@ -65,7 +65,7 @@
     "@ntnyq/prettier-config": "^3.0.1",
     "@types/node": "^24.10.9",
     "@vitejs/plugin-vue": "^6.0.3",
-    "electron": "^39.2.7",
+    "electron": "^40.0.0",
     "electron-builder": "^26.4.0",
     "electron-updater": "^6.7.3",
     "electron-vite": "^5.0.0",
