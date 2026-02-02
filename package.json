@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@10.28.0",
+  "packageManager": "pnpm@10.28.1",
   "description": "__TODO__",
   "keywords": [
     "electron",
@@ -66,14 +66,14 @@
     "@types/node": "^24.10.9",
     "@vitejs/plugin-vue": "^6.0.3",
     "electron": "^40.0.0",
-    "electron-builder": "^26.4.0",
+    "electron-builder": "^26.5.0",
     "electron-updater": "^6.7.3",
     "electron-vite": "^5.0.0",
     "eslint": "^9.39.2",
     "husky": "^9.1.7",
     "nano-staged": "^0.9.0",
     "npm-run-all2": "^8.0.4",
-    "prettier": "^3.8.0",
+    "prettier": "^3.8.1",
     "tinyexec": "^1.0.2",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
@@ -82,8 +82,8 @@
     "unplugin-vue-components": "^30.0.0",
     "unplugin-vue-router": "^0.19.2",
     "vite": "^7.3.1",
-    "vue": "^3.5.26",
-    "vue-tsc": "^3.2.2"
+    "vue": "^3.5.27",
+    "vue-tsc": "^3.2.4"
   },
   "nano-staged": {
     "*.{js,ts,mjs,cjs,vue,md,svg,yml,yaml,json}": "eslint --fix",
