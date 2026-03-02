@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@10.29.3",
+  "packageManager": "pnpm@10.30.1",
   "description": "__TODO__",
   "keywords": [
     "electron",
@@ -65,11 +65,11 @@
     "@ntnyq/prettier-config": "^3.0.1",
     "@types/node": "^24.10.13",
     "@vitejs/plugin-vue": "^6.0.4",
-    "electron": "^40.4.1",
-    "electron-builder": "^26.8.0",
+    "electron": "^40.6.0",
+    "electron-builder": "^26.8.1",
     "electron-updater": "^6.8.3",
     "electron-vite": "^5.0.0",
-    "eslint": "^9.39.2",
+    "eslint": "^9.39.3",
     "husky": "^9.1.7",
     "nano-staged": "^0.9.0",
     "npm-run-all2": "^8.0.4",
@@ -83,7 +83,7 @@
     "unplugin-vue-router": "^0.19.2",
     "vite": "^7.3.1",
     "vue": "^3.5.28",
-    "vue-tsc": "^3.2.4"
+    "vue-tsc": "^3.2.5"
   },
   "nano-staged": {
     "*.{js,ts,mjs,cjs,vue,md,svg,yml,yaml,json}": "eslint --fix",
