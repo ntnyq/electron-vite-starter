@@ -13,22 +13,22 @@ importers:
     dependencies:
       '@egoist/tipc':
         specifier: ^0.3.2
-        version: 0.3.2(electron@40.8.2)(react@19.2.0)
+        version: 0.3.2(electron@41.0.3)(react@19.2.0)
       '@electron-toolkit/typed-ipc':
         specifier: ^1.0.2
-        version: 1.0.2(@electron-toolkit/preload@3.0.2(electron@40.8.2))(electron@40.8.2)
+        version: 1.0.2(@electron-toolkit/preload@3.0.2(electron@41.0.3))(electron@41.0.3)
       '@electron-uikit/contextmenu':
         specifier: ^1.0.0
-        version: 1.0.0(electron@40.8.2)
+        version: 1.0.0(electron@41.0.3)
       '@electron-uikit/notification':
         specifier: ^1.0.0
-        version: 1.0.0(electron@40.8.2)
+        version: 1.0.0(electron@41.0.3)
       '@electron-uikit/titlebar':
         specifier: ^1.4.0
-        version: 1.4.0(electron@40.8.2)
+        version: 1.4.0(electron@41.0.3)
       '@electron-uikit/toast':
         specifier: ^1.0.0
-        version: 1.0.0(electron@40.8.2)
+        version: 1.0.0(electron@41.0.3)
       '@ntnyq/utils':
         specifier: ^0.11.0
         version: 0.11.0
@@ -71,13 +71,13 @@ importers:
     devDependencies:
       '@electron-toolkit/preload':
         specifier: ^3.0.2
-        version: 3.0.2(electron@40.8.2)
+        version: 3.0.2(electron@41.0.3)
       '@electron-toolkit/tsconfig':
         specifier: ^2.0.0
         version: 2.0.0(@types/node@24.12.0)
       '@electron-toolkit/utils':
         specifier: ^4.0.0
-        version: 4.0.0(electron@40.8.2)
+        version: 4.0.0(electron@41.0.3)
       '@iconify-json/ri':
         specifier: ^1.2.10
         version: 1.2.10
@@ -94,8 +94,8 @@ importers:
         specifier: ^6.0.5
         version: 6.0.5(vite@7.3.1(@types/node@24.12.0)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2))(vue@3.5.30(typescript@5.9.3))
       electron:
-        specifier: ^40.8.2
-        version: 40.8.2
+        specifier: ^41.0.2
+        version: 41.0.3
       electron-builder:
         specifier: ^26.8.1
         version: 26.8.1(electron-builder-squirrel-windows@26.8.1)
@@ -2053,8 +2053,8 @@ packages:
     resolution: {integrity: sha512-bO3y10YikuUwUuDUQRM4KfwNkKhnpVO7IPdbsrejwN9/AABJzzTQ4GeHwyzNSrVO+tEH3/Np255a3sVZpZDjvg==}
     engines: {node: '>=8.0.0'}
 
-  electron@40.8.2:
-    resolution: {integrity: sha512-EFgQHG0GBO9glpY/x2v4e7xH5uGuoKOQyXeleljlXZeThbjFsNu0NTUyTCVBOkoKT0F5xCwAOAHcI83b3b8jzA==}
+  electron@41.0.3:
+    resolution: {integrity: sha512-IDjx8liW1q+r7+MOip5W1Eo1eMwJzVObmYrd9yz2dPCkS7XlgLq3qPVMR80TpiROFp73iY30kTzMdpA6fEVs3A==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
 
@@ -4314,47 +4314,47 @@ snapshots:
       ajv: 6.12.6
       ajv-keywords: 3.5.2(ajv@6.12.6)
 
-  '@egoist/tipc@0.3.2(electron@40.8.2)(react@19.2.0)':
+  '@egoist/tipc@0.3.2(electron@41.0.3)(react@19.2.0)':
     dependencies:
-      electron: 40.8.2
+      electron: 41.0.3
     optionalDependencies:
       '@tanstack/react-query': 5.90.6(react@19.2.0)
     transitivePeerDependencies:
       - react
 
-  '@electron-toolkit/preload@3.0.2(electron@40.8.2)':
+  '@electron-toolkit/preload@3.0.2(electron@41.0.3)':
     dependencies:
-      electron: 40.8.2
+      electron: 41.0.3
 
   '@electron-toolkit/tsconfig@2.0.0(@types/node@24.12.0)':
     dependencies:
       '@types/node': 24.12.0
 
-  '@electron-toolkit/typed-ipc@1.0.2(@electron-toolkit/preload@3.0.2(electron@40.8.2))(electron@40.8.2)':
+  '@electron-toolkit/typed-ipc@1.0.2(@electron-toolkit/preload@3.0.2(electron@41.0.3))(electron@41.0.3)':
     dependencies:
-      '@electron-toolkit/preload': 3.0.2(electron@40.8.2)
-      electron: 40.8.2
+      '@electron-toolkit/preload': 3.0.2(electron@41.0.3)
+      electron: 41.0.3
 
-  '@electron-toolkit/utils@4.0.0(electron@40.8.2)':
+  '@electron-toolkit/utils@4.0.0(electron@41.0.3)':
     dependencies:
-      electron: 40.8.2
+      electron: 41.0.3
 
-  '@electron-uikit/contextmenu@1.0.0(electron@40.8.2)':
+  '@electron-uikit/contextmenu@1.0.0(electron@41.0.3)':
     dependencies:
-      electron: 40.8.2
+      electron: 41.0.3
 
-  '@electron-uikit/notification@1.0.0(electron@40.8.2)':
+  '@electron-uikit/notification@1.0.0(electron@41.0.3)':
     dependencies:
       '@tiny-libs/typed-event-emitter': 1.0.0
-      electron: 40.8.2
+      electron: 41.0.3
 
-  '@electron-uikit/titlebar@1.4.0(electron@40.8.2)':
+  '@electron-uikit/titlebar@1.4.0(electron@41.0.3)':
     dependencies:
-      electron: 40.8.2
+      electron: 41.0.3
 
-  '@electron-uikit/toast@1.0.0(electron@40.8.2)':
+  '@electron-uikit/toast@1.0.0(electron@41.0.3)':
     dependencies:
-      electron: 40.8.2
+      electron: 41.0.3
 
   '@electron/asar@3.4.1':
     dependencies:
@@ -6258,7 +6258,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  electron@40.8.2:
+  electron@41.0.3:
     dependencies:
       '@electron/get': 2.0.3
       '@types/node': 24.12.0
