@@ -1,4 +1,4 @@
-import '@unocss/reset/tailwind.css'
+import '@unocss/reset/tailwind-compat.css'
 import 'floating-vue/style.css'
 import 'uno.css'
 import './styles/global.css'

@@ -5,11 +5,11 @@
 
 import process from 'node:process'
 import Vue from '@vitejs/plugin-vue'
-import { defineConfig, externalizeDepsPlugin } from 'electron-vite'
+import { defineConfig } from 'electron-vite'
 import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import VueComponents from 'unplugin-vue-components/vite'
-import VueRouter from 'unplugin-vue-router/vite'
+import VueRouter from 'vue-router/vite'
 import pkg from './package.json'
 import { resolve } from './scripts/utils'
 
@@ -22,18 +22,18 @@ const define = {
 export default defineConfig({
   main: {
     define,
-    plugins: [externalizeDepsPlugin()],
+    plugins: [],
   },
 
   preload: {
-    plugins: [externalizeDepsPlugin()],
+    plugins: [],
   },
 
   renderer: {
     define,
     plugins: [
       VueRouter({
-        dts: resolve('src/renderer/src/typed-router.d.ts'),
+        dts: resolve('src/renderer/src/routes.d.ts'),
         routesFolder: resolve('src/renderer/src/pages'),
       }),
 
