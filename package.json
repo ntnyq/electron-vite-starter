@@ -76,7 +76,7 @@
     "prettier": "^3.9.1",
     "tinyexec": "^1.2.4",
     "tsx": "^4.22.4",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.3",
     "unocss": "^66.7.3",
     "unplugin-auto-import": "^21.0.0",
     "unplugin-vue-components": "^32.1.0",
