@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@11.13.1",
+  "packageManager": "pnpm@11.15.1",
   "description": "__TODO__",
   "keywords": [
     "electron",
@@ -36,13 +36,13 @@
     "typecheck:web": "vue-tsc --noEmit -p tsconfig.web.json --composite false"
   },
   "dependencies": {
-    "@egoist/tipc": "^0.3.2",
+    "@egoist/tipc": "^0.4.0",
     "@electron-toolkit/typed-ipc": "^1.0.2",
     "@electron-uikit/contextmenu": "^1.0.0",
     "@electron-uikit/notification": "^1.0.0",
     "@electron-uikit/titlebar": "^1.4.0",
     "@electron-uikit/toast": "^1.0.0",
-    "@ntnyq/utils": "^0.17.0",
+    "@ntnyq/utils": "^0.18.1",
     "@unocss/reset": "^66.7.5",
     "@vueuse/core": "^14.3.0",
     "dayjs": "^1.11.21",
