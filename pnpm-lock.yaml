@@ -13,22 +13,22 @@ importers:
     dependencies:
       '@egoist/tipc':
         specifier: ^0.4.0
-        version: 0.4.0(electron@43.4.1(supports-color@7.2.0))(react@19.2.7)
+        version: 0.4.0(electron@44.2.0(supports-color@7.2.0))(react@19.2.7)
       '@electron-toolkit/typed-ipc':
         specifier: ^1.0.2
-        version: 1.0.2(@electron-toolkit/preload@3.0.2(electron@43.4.1(supports-color@7.2.0)))(electron@43.4.1(supports-color@7.2.0))
+        version: 1.0.2(@electron-toolkit/preload@3.0.2(electron@44.2.0(supports-color@7.2.0)))(electron@44.2.0(supports-color@7.2.0))
       '@electron-uikit/contextmenu':
         specifier: ^1.0.0
-        version: 1.0.0(electron@43.4.1(supports-color@7.2.0))
+        version: 1.0.0(electron@44.2.0(supports-color@7.2.0))
       '@electron-uikit/notification':
         specifier: ^1.0.0
-        version: 1.0.0(electron@43.4.1(supports-color@7.2.0))
+        version: 1.0.0(electron@44.2.0(supports-color@7.2.0))
       '@electron-uikit/titlebar':
         specifier: ^1.4.0
-        version: 1.4.0(electron@43.4.1(supports-color@7.2.0))
+        version: 1.4.0(electron@44.2.0(supports-color@7.2.0))
       '@electron-uikit/toast':
         specifier: ^1.0.0
-        version: 1.0.0(electron@43.4.1(supports-color@7.2.0))
+        version: 1.0.0(electron@44.2.0(supports-color@7.2.0))
       '@ntnyq/utils':
         specifier: ^0.21.1
         version: 0.21.1
@@ -71,13 +71,13 @@ importers:
     devDependencies:
       '@electron-toolkit/preload':
         specifier: ^3.0.2
-        version: 3.0.2(electron@43.4.1(supports-color@7.2.0))
+        version: 3.0.2(electron@44.2.0(supports-color@7.2.0))
       '@electron-toolkit/tsconfig':
         specifier: ^2.0.0
         version: 2.0.0(@types/node@26.2.0)
       '@electron-toolkit/utils':
         specifier: ^4.0.0
-        version: 4.0.0(electron@43.4.1(supports-color@7.2.0))
+        version: 4.0.0(electron@44.2.0(supports-color@7.2.0))
       '@iconify-json/ri':
         specifier: ^1.2.10
         version: 1.2.10
@@ -94,8 +94,8 @@ importers:
         specifier: ^6.0.8
         version: 6.0.8(vite@8.2.2(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.12)(yaml@2.9.0))(vue@3.5.41(typescript@6.0.3))
       electron:
-        specifier: ^43.4.1
-        version: 43.4.1(supports-color@7.2.0)
+        specifier: ^44.0.0
+        version: 44.2.0(supports-color@7.2.0)
       electron-builder:
         specifier: ^26.15.3
         version: 26.15.3(electron-builder-squirrel-windows@26.15.3)(supports-color@7.2.0)
@@ -2097,8 +2097,8 @@ packages:
     resolution: {integrity: sha512-bO3y10YikuUwUuDUQRM4KfwNkKhnpVO7IPdbsrejwN9/AABJzzTQ4GeHwyzNSrVO+tEH3/Np255a3sVZpZDjvg==}
     engines: {node: '>=8.0.0'}
 
-  electron@43.4.1:
-    resolution: {integrity: sha512-5b+EuiwkgG5iRcsEL34rimgRpkYp15SsfZOa0pC5kXs0Tb82TH4n95rpQzTZa7yRCbA7tm0WoEbuBL6NaAhAcA==}
+  electron@44.2.0:
+    resolution: {integrity: sha512-oK1icjhapp3xsUZycO9WZaLmd3hJnA7ieobC4mpdtO1pEN+PPGWpA3m1Mgzzuc1wzSD2Wai4zcH4yfpGJqxFMA==}
     engines: {node: '>= 22.12.0'}
     hasBin: true
 
@@ -4286,9 +4286,9 @@ snapshots:
       fast-wrap-ansi: 0.2.2
       sisteransi: 1.0.5
 
-  '@egoist/tipc@0.4.0(electron@43.4.1(supports-color@7.2.0))(react@19.2.7)':
+  '@egoist/tipc@0.4.0(electron@44.2.0(supports-color@7.2.0))(react@19.2.7)':
     dependencies:
-      electron: 43.4.1(supports-color@7.2.0)
+      electron: 44.2.0(supports-color@7.2.0)
     optionalDependencies:
       '@tanstack/react-query': 5.101.2(react@19.2.7)
     transitivePeerDependencies:
@@ -4296,39 +4296,39 @@ snapshots:
 
   '@electron-internal/extract-zip@1.0.4': {}
 
-  '@electron-toolkit/preload@3.0.2(electron@43.4.1(supports-color@7.2.0))':
+  '@electron-toolkit/preload@3.0.2(electron@44.2.0(supports-color@7.2.0))':
     dependencies:
-      electron: 43.4.1(supports-color@7.2.0)
+      electron: 44.2.0(supports-color@7.2.0)
 
   '@electron-toolkit/tsconfig@2.0.0(@types/node@26.2.0)':
     dependencies:
       '@types/node': 26.2.0
 
-  '@electron-toolkit/typed-ipc@1.0.2(@electron-toolkit/preload@3.0.2(electron@43.4.1(supports-color@7.2.0)))(electron@43.4.1(supports-color@7.2.0))':
+  '@electron-toolkit/typed-ipc@1.0.2(@electron-toolkit/preload@3.0.2(electron@44.2.0(supports-color@7.2.0)))(electron@44.2.0(supports-color@7.2.0))':
     dependencies:
-      '@electron-toolkit/preload': 3.0.2(electron@43.4.1(supports-color@7.2.0))
-      electron: 43.4.1(supports-color@7.2.0)
+      '@electron-toolkit/preload': 3.0.2(electron@44.2.0(supports-color@7.2.0))
+      electron: 44.2.0(supports-color@7.2.0)
 
-  '@electron-toolkit/utils@4.0.0(electron@43.4.1(supports-color@7.2.0))':
+  '@electron-toolkit/utils@4.0.0(electron@44.2.0(supports-color@7.2.0))':
     dependencies:
-      electron: 43.4.1(supports-color@7.2.0)
+      electron: 44.2.0(supports-color@7.2.0)
 
-  '@electron-uikit/contextmenu@1.0.0(electron@43.4.1(supports-color@7.2.0))':
+  '@electron-uikit/contextmenu@1.0.0(electron@44.2.0(supports-color@7.2.0))':
     dependencies:
-      electron: 43.4.1(supports-color@7.2.0)
+      electron: 44.2.0(supports-color@7.2.0)
 
-  '@electron-uikit/notification@1.0.0(electron@43.4.1(supports-color@7.2.0))':
+  '@electron-uikit/notification@1.0.0(electron@44.2.0(supports-color@7.2.0))':
     dependencies:
       '@tiny-libs/typed-event-emitter': 1.0.0
-      electron: 43.4.1(supports-color@7.2.0)
+      electron: 44.2.0(supports-color@7.2.0)
 
-  '@electron-uikit/titlebar@1.4.0(electron@43.4.1(supports-color@7.2.0))':
+  '@electron-uikit/titlebar@1.4.0(electron@44.2.0(supports-color@7.2.0))':
     dependencies:
-      electron: 43.4.1(supports-color@7.2.0)
+      electron: 44.2.0(supports-color@7.2.0)
 
-  '@electron-uikit/toast@1.0.0(electron@43.4.1(supports-color@7.2.0))':
+  '@electron-uikit/toast@1.0.0(electron@44.2.0(supports-color@7.2.0))':
     dependencies:
-      electron: 43.4.1(supports-color@7.2.0)
+      electron: 44.2.0(supports-color@7.2.0)
 
   '@electron/asar@3.4.1':
     dependencies:
@@ -6109,7 +6109,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  electron@43.4.1(supports-color@7.2.0):
+  electron@44.2.0(supports-color@7.2.0):
     dependencies:
       '@electron-internal/extract-zip': 1.0.4
       '@electron/get': 5.0.0(supports-color@7.2.0)
