@@ -44,7 +44,7 @@
     "@electron-uikit/toast": "^1.0.0",
     "@ntnyq/utils": "^0.23.0",
     "@unocss/reset": "^66.10.5",
-    "@vueuse/core": "^14.4.0",
+    "@vueuse/core": "^15.0.0",
     "dayjs": "^1.11.23",
     "echarts": "^6.1.0",
     "electron-log": "^5.4.4",
